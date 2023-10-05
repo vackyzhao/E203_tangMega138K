@@ -25,25 +25,25 @@
                     <SubModule name="u_e203_subsys_pllclkdiv" Alu="6" Lut="12">
                         <SubModule name="div_cnt_dfflr" Register="6" Lut="2"/>
                         <SubModule name="flag_dfflr" Register="1" Lut="1"/>
-                        <SubModule name="u_pllclkdiv_clkgate" Register="1" Lut="1"/>
+                        <SubModule name="u_pllclkdiv_clkgate" Register="1"/>
                     </SubModule>
-                    <SubModule name="u_e203_subsys_gfcm" Register="6" Lut="3">
-                        <SubModule name="u_clk0_clkgate" Register="1"/>
-                        <SubModule name="u_clk1_clkgate" Register="1"/>
+                    <SubModule name="u_e203_subsys_gfcm" Register="6" Lut="2">
+                        <SubModule name="u_clk0_clkgate" Register="1" Lut="2"/>
+                        <SubModule name="u_clk1_clkgate" Register="1" Lut="2"/>
                     </SubModule>
                 </SubModule>
                 <SubModule name="u_e203_cpu_top">
                     <SubModule name="u_e203_cpu">
                         <SubModule name="u_e203_reset_ctrl" Register="2"/>
-                        <SubModule name="u_e203_clk_ctrl" Lut="25">
+                        <SubModule name="u_e203_clk_ctrl" Lut="27">
                             <SubModule name="u_ifu_clkgate" Register="1" Lut="1"/>
                             <SubModule name="u_exu_clkgate" Register="1" Lut="1"/>
                             <SubModule name="u_lsu_clkgate" Register="1" Lut="1"/>
                             <SubModule name="u_biu_clkgate" Register="1" Lut="1"/>
                             <SubModule name="itcm_active_dffr" Register="1" Lut="1"/>
-                            <SubModule name="u_itcm_clkgate" Register="1" Lut="1"/>
+                            <SubModule name="u_itcm_clkgate" Register="1"/>
                             <SubModule name="dtcm_active_dffr" Register="1"/>
-                            <SubModule name="u_dtcm_clkgate" Register="1" Lut="1"/>
+                            <SubModule name="u_dtcm_clkgate" Register="1" Lut="7"/>
                         </SubModule>
                         <SubModule name="u_e203_irq_sync">
                             <SubModule name="master_gen.u_dbg_irq_sync">
@@ -63,7 +63,7 @@
                                 <SubModule name="sync_gen[1].i_is_not_0.sync_dffr" Register="1"/>
                             </SubModule>
                         </SubModule>
-                        <SubModule name="u_e203_nice_core" Alu="64" Lut="340">
+                        <SubModule name="u_e203_nice_core" Alu="64" Lut="333">
                             <SubModule name="state_dfflr" Register="2"/>
                             <SubModule name="lbuf_cnt_dfflr" Register="2"/>
                             <SubModule name="sbuf_cnt_dfflr" Register="2"/>
@@ -81,7 +81,7 @@
                         </SubModule>
                         <SubModule name="u_e203_core">
                             <SubModule name="u_e203_ifu">
-                                <SubModule name="u_e203_ifu_ifetch" Alu="57" Lut="394">
+                                <SubModule name="u_e203_ifu_ifetch" Alu="57" Lut="410">
                                     <SubModule name="reset_flag_dffrs" Register="1"/>
                                     <SubModule name="reset_req_dfflr" Register="1"/>
                                     <SubModule name="halt_ack_dfflr" Register="1"/>
@@ -97,7 +97,7 @@
                                     <SubModule name="ir_rs2idx_dfflr" Register="5"/>
                                     <SubModule name="ifu_pc_dfflr" Register="31"/>
                                     <SubModule name="u_e203_ifu_minidec">
-                                        <SubModule name="u_e203_exu_decode" Lut="34"/>
+                                        <SubModule name="u_e203_exu_decode" Lut="29"/>
                                     </SubModule>
                                     <SubModule name="u_e203_ifu_litebpu" Lut="4">
                                         <SubModule name="rs1xn_rdrf_dfflrs" Register="1"/>
@@ -106,9 +106,9 @@
                                     <SubModule name="out_flag_dfflr" Register="1"/>
                                     <SubModule name="pc_newpend_dfflr" Register="1"/>
                                 </SubModule>
-                                <SubModule name="u_e203_ifu_ift2icb" Alu="31" Lut="242">
+                                <SubModule name="u_e203_ifu_ift2icb" Alu="31" Lut="225">
                                     <SubModule name="u_e203_ifetch_rsp_bypbuf" Lut="33">
-                                        <SubModule name="u_bypbuf_fifo" Lut="6">
+                                        <SubModule name="u_bypbuf_fifo" Lut="15">
                                             <SubModule name="dp_gt0.vec_0_dfflrs" Register="1"/>
                                             <SubModule name="dp_gt0.vec_31_dfflr" Register="1"/>
                                             <SubModule name="dp_gt0.fifo_rf[0].fifo_rf_dffl" Register="33"/>
@@ -127,7 +127,7 @@
                                 </SubModule>
                             </SubModule>
                             <SubModule name="u_e203_exu">
-                                <SubModule name="u_e203_exu_regfile" Lut="1077">
+                                <SubModule name="u_e203_exu_regfile" Lut="1074">
                                     <SubModule name="regfile[1].rfno0.rf_dffl" Register="32"/>
                                     <SubModule name="regfile[2].rfno0.rf_dffl" Register="32"/>
                                     <SubModule name="regfile[3].rfno0.rf_dffl" Register="32"/>
@@ -160,8 +160,8 @@
                                     <SubModule name="regfile[30].rfno0.rf_dffl" Register="32"/>
                                     <SubModule name="regfile[31].rfno0.rf_dffl" Register="32"/>
                                 </SubModule>
-                                <SubModule name="u_e203_exu_decode" Lut="177"/>
-                                <SubModule name="u_e203_exu_disp" Lut="27"/>
+                                <SubModule name="u_e203_exu_decode" Lut="145"/>
+                                <SubModule name="u_e203_exu_disp" Lut="22"/>
                                 <SubModule name="u_e203_exu_oitf" Alu="30" Lut="8">
                                     <SubModule name="depth_gt1.alc_ptr_flg_dfflrs" Register="1" Lut="1"/>
                                     <SubModule name="depth_gt1.alc_ptr_dfflrs" Register="1"/>
@@ -176,9 +176,9 @@
                                     <SubModule name="oitf_entries[1].pc_dfflrs" Register="31"/>
                                     <SubModule name="oitf_entries[1].rdwen_dfflrs" Register="1"/>
                                 </SubModule>
-                                <SubModule name="u_e203_exu_alu" Lut="56">
+                                <SubModule name="u_e203_exu_alu" Lut="60">
                                     <SubModule name="u_e203_exu_nice">
-                                        <SubModule name="u_nice_itag_fifo" Lut="23">
+                                        <SubModule name="u_nice_itag_fifo" Lut="26">
                                             <SubModule name="dp_gt0.rptr_vec_0_dfflrs" Register="1"/>
                                             <SubModule name="dp_gt0.wptr_vec_0_dfflrs" Register="1"/>
                                             <SubModule name="dp_gt0.dp_gt1.rptr_vec_31_dfflr" Register="3"/>
@@ -191,36 +191,36 @@
                                             <SubModule name="dp_gt0.fifo_rf[3].fifo_rf_dffl" Register="1"/>
                                         </SubModule>
                                     </SubModule>
-                                    <SubModule name="u_e203_exu_alu_csrctrl" Lut="437"/>
-                                    <SubModule name="u_e203_exu_alu_lsuagu" Lut="118">
+                                    <SubModule name="u_e203_exu_alu_csrctrl" Lut="416"/>
+                                    <SubModule name="u_e203_exu_alu_lsuagu" Lut="122">
                                         <SubModule name="unalgn_flg_dffl" Register="1"/>
                                         <SubModule name="icb_state_dfflr" Register="3"/>
                                         <SubModule name="icb_leftover_err_dfflr" Register="1" Lut="3"/>
                                     </SubModule>
-                                    <SubModule name="u_e203_exu_alu_muldiv" Alu="33" Lut="789">
+                                    <SubModule name="u_e203_exu_alu_muldiv" Alu="33" Lut="786">
                                         <SubModule name="flushed_dfflr" Register="1"/>
                                         <SubModule name="muldiv_state_dfflr" Register="3"/>
                                         <SubModule name="exec_cnt_dfflr" Register="6"/>
                                         <SubModule name="part_prdt_sft1_dfflr" Register="1"/>
                                         <SubModule name="part_remd_sft1_dfflr" Register="1"/>
                                     </SubModule>
-                                    <SubModule name="u_e203_exu_alu_dpath" Alu="67" Lut="475">
-                                        <SubModule name="sbf_0_dffl" Register="33" Lut="3"/>
+                                    <SubModule name="u_e203_exu_alu_dpath" Alu="67" Lut="504">
+                                        <SubModule name="sbf_0_dffl" Register="33" Lut="2"/>
                                         <SubModule name="sbf_1_dffl" Register="33"/>
                                     </SubModule>
                                 </SubModule>
-                                <SubModule name="u_e203_exu_longpwbck" Lut="3"/>
-                                <SubModule name="u_e203_exu_wbck" Lut="464"/>
+                                <SubModule name="u_e203_exu_longpwbck" Lut="2"/>
+                                <SubModule name="u_e203_exu_wbck" Lut="472"/>
                                 <SubModule name="u_e203_exu_commit">
-                                    <SubModule name="u_e203_exu_branchslv" Alu="61" Lut="90"/>
-                                    <SubModule name="u_e203_exu_excp" Lut="42">
+                                    <SubModule name="u_e203_exu_branchslv" Alu="61" Lut="89"/>
+                                    <SubModule name="u_e203_exu_excp" Lut="55">
                                         <SubModule name="wfi_flag_dfflr" Register="1"/>
                                         <SubModule name="wfi_halt_req_dfflr" Register="1"/>
                                         <SubModule name="step_req_dfflr" Register="1"/>
                                     </SubModule>
                                 </SubModule>
-                                <SubModule name="u_e203_exu_csr" Lut="559">
-                                    <SubModule name="status_mpie_dfflr" Register="1" Lut="2"/>
+                                <SubModule name="u_e203_exu_csr" Lut="554">
+                                    <SubModule name="status_mpie_dfflr" Register="1" Lut="3"/>
                                     <SubModule name="status_mie_dfflr" Register="1"/>
                                     <SubModule name="mie_dfflr" Register="3"/>
                                     <SubModule name="meip_dffr" Register="1"/>
@@ -242,23 +242,23 @@
                                 </SubModule>
                             </SubModule>
                             <SubModule name="u_e203_lsu">
-                                <SubModule name="u_e203_lsu_ctrl" Alu="32" Lut="129">
-                                    <SubModule name="u_lsu_icb_arbt" Lut="181">
-                                        <SubModule name="arbt_num_gt_1_gen.dp_1.u_sirv_gnrl_rspid_fifo" Lut="3">
+                                <SubModule name="u_e203_lsu_ctrl" Alu="32" Lut="114">
+                                    <SubModule name="u_lsu_icb_arbt" Lut="194">
+                                        <SubModule name="arbt_num_gt_1_gen.dp_1.u_sirv_gnrl_rspid_fifo" Lut="6">
                                             <SubModule name="dp_gt_0.vld_dfflr" Register="1"/>
                                             <SubModule name="dp_gt_0.dat_dfflr" Register="1"/>
                                         </SubModule>
                                     </SubModule>
                                     <SubModule name="excl_flg_dffl" Register="1"/>
                                     <SubModule name="excl_addr_dffl" Register="32"/>
-                                    <SubModule name="u_e203_lsu_splt_stage" Lut="1">
+                                    <SubModule name="u_e203_lsu_splt_stage" Lut="2">
                                         <SubModule name="dp_gt_0.dat_dfflr" Register="43"/>
                                     </SubModule>
                                 </SubModule>
                             </SubModule>
                             <SubModule name="u_e203_biu" Lut="16">
-                                <SubModule name="u_biu_icb_arbt" Lut="205">
-                                    <SubModule name="arbt_num_gt_1_gen.dp_1.u_sirv_gnrl_rspid_fifo" Lut="8">
+                                <SubModule name="u_biu_icb_arbt" Lut="231">
+                                    <SubModule name="arbt_num_gt_1_gen.dp_1.u_sirv_gnrl_rspid_fifo" Lut="4">
                                         <SubModule name="dp_gt_0.vld_dfflr" Register="1"/>
                                         <SubModule name="dp_gt_0.dat_dfflr" Register="1"/>
                                     </SubModule>
@@ -269,14 +269,14 @@
                                         <SubModule name="dp_gt0.vec_31_dfflr" Register="1"/>
                                         <SubModule name="dp_gt0.fifo_rf[0].fifo_rf_dffl" Register="65"/>
                                     </SubModule>
-                                    <SubModule name="u_sirv_gnrl_rsp_fifo" Lut="7">
+                                    <SubModule name="u_sirv_gnrl_rsp_fifo" Lut="6">
                                         <SubModule name="dp_gt0.vec_0_dfflrs" Register="1"/>
                                         <SubModule name="dp_gt0.vec_31_dfflr" Register="1"/>
                                         <SubModule name="dp_gt0.fifo_rf[0].fifo_rf_dffl" Register="33"/>
                                     </SubModule>
                                     <SubModule name="outs_cnt_dfflr" Register="1" Lut="1"/>
                                 </SubModule>
-                                <SubModule name="u_biu_icb_splt" Lut="232">
+                                <SubModule name="u_biu_icb_splt" Lut="233">
                                     <SubModule name="splt_num_gt_1_gen.fifo_dp_1.u_sirv_gnrl_rspid_fifo" Lut="3">
                                         <SubModule name="dp_gt_0.vld_dfflr" Register="1"/>
                                         <SubModule name="dp_gt_0.dat_dfflr" Register="5"/>
@@ -284,38 +284,38 @@
                                 </SubModule>
                             </SubModule>
                         </SubModule>
-                        <SubModule name="u_e203_itcm_ctrl" Lut="96">
+                        <SubModule name="u_e203_itcm_ctrl" Lut="77">
                             <SubModule name="u_itcm_icb_lsu2itcm_n2w">
-                                <SubModule name="fifo_dp_1.u_sirv_gnrl_n2w_fifo" Lut="7">
+                                <SubModule name="fifo_dp_1.u_sirv_gnrl_n2w_fifo" Lut="6">
                                     <SubModule name="dp_gt_0.vld_dfflr" Register="1"/>
                                     <SubModule name="dp_gt_0.dat_dfflr" Register="1"/>
                                 </SubModule>
                             </SubModule>
                             <SubModule name="u_itcm_icb_arbt">
-                                <SubModule name="arbt_num_gt_1_gen.dp_1.u_sirv_gnrl_rspid_fifo" Lut="4">
+                                <SubModule name="arbt_num_gt_1_gen.dp_1.u_sirv_gnrl_rspid_fifo" Lut="14">
                                     <SubModule name="dp_gt_0.vld_dfflr" Register="1"/>
                                 </SubModule>
                             </SubModule>
                             <SubModule name="u_sram_icb_ctrl">
-                                <SubModule name="u_byp_icb_cmd_buf" Lut="70">
-                                    <SubModule name="u_bypbuf_fifo" Lut="6">
+                                <SubModule name="u_byp_icb_cmd_buf" Lut="65">
+                                    <SubModule name="u_bypbuf_fifo" Lut="5">
                                         <SubModule name="dp_gt0.vec_0_dfflrs" Register="1"/>
                                         <SubModule name="dp_gt0.vec_31_dfflr" Register="1"/>
                                         <SubModule name="dp_gt0.fifo_rf[0].fifo_rf_dffl" Register="52"/>
                                     </SubModule>
                                 </SubModule>
                                 <SubModule name="u_sirv_1cyc_sram_ctrl" Lut="2">
-                                    <SubModule name="u_e1_stage" Lut="2">
+                                    <SubModule name="u_e1_stage" Lut="4">
                                         <SubModule name="dp_gt_0.vld_dfflr" Register="1"/>
                                         <SubModule name="dp_gt_0.dat_dfflr" Register="1"/>
                                     </SubModule>
-                                    <SubModule name="u_ram_clkgate" Register="1" Lut="1"/>
+                                    <SubModule name="u_ram_clkgate" Register="1" Lut="3"/>
                                 </SubModule>
                             </SubModule>
                             <SubModule name="ifu_holdup_dffl" Register="1"/>
                         </SubModule>
-                        <SubModule name="u_e203_dtcm_ctrl" Lut="3">
-                            <SubModule name="u_dtcm_icb_arbt" Lut="47">
+                        <SubModule name="u_e203_dtcm_ctrl" Lut="2">
+                            <SubModule name="u_dtcm_icb_arbt" Lut="48">
                                 <SubModule name="arbt_num_gt_1_gen.dp_1.u_sirv_gnrl_rspid_fifo" Lut="5">
                                     <SubModule name="dp_gt_0.vld_dfflr" Register="1"/>
                                 </SubModule>
@@ -329,10 +329,10 @@
                                     </SubModule>
                                 </SubModule>
                                 <SubModule name="u_sirv_1cyc_sram_ctrl" Lut="3">
-                                    <SubModule name="u_e1_stage" Lut="1">
+                                    <SubModule name="u_e1_stage" Lut="2">
                                         <SubModule name="dp_gt_0.vld_dfflr" Register="1"/>
                                     </SubModule>
-                                    <SubModule name="u_ram_clkgate" Register="1" Lut="1"/>
+                                    <SubModule name="u_ram_clkgate" Register="1" Lut="3"/>
                                 </SubModule>
                             </SubModule>
                         </SubModule>
@@ -340,12 +340,12 @@
                     <SubModule name="u_e203_srams">
                         <SubModule name="u_e203_itcm_ram">
                             <SubModule name="u_e203_itcm_gnrl_ram">
-                                <SubModule name="u_sirv_sim_ram" Register="80" Lut="109" Bsram="8"/>
+                                <SubModule name="u_sirv_sim_ram" Register="80" Lut="110" Bsram="8"/>
                             </SubModule>
                         </SubModule>
                         <SubModule name="u_e203_dtcm_ram">
                             <SubModule name="u_e203_dtcm_gnrl_ram">
-                                <SubModule name="u_sirv_sim_ram" Register="40" Lut="46" Bsram="4"/>
+                                <SubModule name="u_sirv_sim_ram" Register="40" Lut="49" Bsram="4"/>
                             </SubModule>
                         </SubModule>
                     </SubModule>
@@ -360,7 +360,7 @@
                         <SubModule name="sync_gen[1].i_is_not_0.sync_dffr" Register="1"/>
                     </SubModule>
                     <SubModule name="u_sirv_plic_top">
-                        <SubModule name="u_sirv_plic_man" Lut="294">
+                        <SubModule name="u_sirv_plic_man" Lut="295">
                             <SubModule name="flop_i_irq.plic_irq_i_dffr" Register="4"/>
                             <SubModule name="flop_o_irq.plic_irq_o_dffr" Register="1"/>
                             <SubModule name="flop_o_irq.plic_irq_id_dffr" Register="5"/>
@@ -395,7 +395,7 @@
                             <SubModule name="source_gen[13].irq_prio_dfflr" Register="3"/>
                             <SubModule name="source_gen[14].irq_pend_dfflr" Register="1"/>
                             <SubModule name="source_gen[14].irq_prio_dfflr" Register="3"/>
-                            <SubModule name="source_gen[15].u_LevelGateway_1_1" Register="1" Lut="2"/>
+                            <SubModule name="source_gen[15].u_LevelGateway_1_1" Register="1" Lut="3"/>
                             <SubModule name="source_gen[15].irq_pend_dfflr" Register="1"/>
                             <SubModule name="source_gen[15].irq_prio_dfflr" Register="3"/>
                             <SubModule name="source_gen[16].irq_pend_dfflr" Register="1"/>
@@ -420,9 +420,9 @@
                     </SubModule>
                 </SubModule>
                 <SubModule name="u_e203_subsys_perips" Lut="12">
-                    <SubModule name="u_sirv_ppi_fab" Lut="23">
+                    <SubModule name="u_sirv_ppi_fab" Lut="26">
                         <SubModule name="u_sirv_gnrl_icb_buffer">
-                            <SubModule name="u_sirv_gnrl_cmd_fifo" Lut="13">
+                            <SubModule name="u_sirv_gnrl_cmd_fifo" Lut="12">
                                 <SubModule name="dp_gt0.rptr_vec_0_dfflrs" Register="1"/>
                                 <SubModule name="dp_gt0.wptr_vec_0_dfflrs" Register="1"/>
                                 <SubModule name="dp_gt0.dp_gt1.rptr_vec_31_dfflr" Register="1"/>
@@ -451,15 +451,15 @@
                         </SubModule>
                     </SubModule>
                     <SubModule name="u_sirv_qspi0_top">
-                        <SubModule name="qspi_TLWidthWidget" Register="26" Lut="7"/>
-                        <SubModule name="qspi_TLFragmenter_1" Register="13" Lut="25">
+                        <SubModule name="qspi_TLWidthWidget" Register="26" Lut="9"/>
+                        <SubModule name="qspi_TLFragmenter_1" Register="13" Lut="24">
                             <SubModule name="u_repeater" Register="29" Lut="31"/>
                         </SubModule>
                         <SubModule name="u_sirv_flash_qspi" Register="29">
-                            <SubModule name="mac" Register="4" Lut="14">
-                                <SubModule name="phy" Register="39" Lut="96"/>
+                            <SubModule name="mac" Register="4" Lut="10">
+                                <SubModule name="phy" Register="39" Lut="95"/>
                             </SubModule>
-                            <SubModule name="flash" Register="7" Lut="67"/>
+                            <SubModule name="flash" Register="7" Lut="66"/>
                         </SubModule>
                     </SubModule>
                     <SubModule name="u_aon_icb_cdc_tx" Lut="4">
@@ -482,7 +482,7 @@
                         <SubModule name="buf_dat_dfflr" Register="32"/>
                         <SubModule name="buf_vld_dfflr" Register="1"/>
                     </SubModule>
-                    <SubModule name="u_gpioA_apb_icb2apb" Lut="2">
+                    <SubModule name="u_gpioA_apb_icb2apb" Lut="3">
                         <SubModule name="u_rsp_fifo" Lut="3">
                             <SubModule name="dp_gt0.vec_0_dfflrs" Register="1"/>
                             <SubModule name="dp_gt0.vec_31_dfflr" Register="1"/>
@@ -490,8 +490,8 @@
                         </SubModule>
                         <SubModule name="apb_enable_dfflr" Register="1"/>
                     </SubModule>
-                    <SubModule name="u_perips_apb_gpioA" Register="447" Lut="326"/>
-                    <SubModule name="u_uart0_apb_icb2apb" Lut="2">
+                    <SubModule name="u_perips_apb_gpioA" Register="447" Lut="328"/>
+                    <SubModule name="u_uart0_apb_icb2apb" Lut="3">
                         <SubModule name="u_rsp_fifo" Lut="4">
                             <SubModule name="dp_gt0.vec_0_dfflrs" Register="1"/>
                             <SubModule name="dp_gt0.vec_31_dfflr" Register="1"/>
@@ -499,14 +499,14 @@
                         </SubModule>
                         <SubModule name="apb_enable_dfflr" Register="1"/>
                     </SubModule>
-                    <SubModule name="u_perips_apb_uart0" Register="48" Lut="60">
+                    <SubModule name="u_perips_apb_uart0" Register="48" Lut="57">
                         <SubModule name="uart_rx_i" Register="36" Alu="16" Lut="63"/>
-                        <SubModule name="uart_tx_i" Register="32" Alu="16" Lut="53"/>
-                        <SubModule name="uart_rx_fifo_i" Register="30" Alu="4" Lut="61" Ssram="3"/>
+                        <SubModule name="uart_tx_i" Register="32" Alu="16" Lut="56"/>
+                        <SubModule name="uart_rx_fifo_i" Register="30" Alu="4" Lut="59" Ssram="3"/>
                         <SubModule name="uart_tx_fifo_i" Register="30" Alu="4" Lut="58" Ssram="2"/>
                         <SubModule name="uart_interrupt_i" Register="2" Lut="13"/>
                     </SubModule>
-                    <SubModule name="u_sirv_hclkgen_regs" Lut="6">
+                    <SubModule name="u_sirv_hclkgen_regs" Lut="8">
                         <SubModule name="hfxoscen_dfflrs" Register="1"/>
                         <SubModule name="pll_N_42_dfflr" Register="3"/>
                         <SubModule name="pll_N_1_dfflr" Register="1"/>
@@ -531,7 +531,7 @@
                 <SubModule name="u_e203_subsys_mems">
                     <SubModule name="u_sirv_mem_fab" Lut="17">
                         <SubModule name="u_sirv_gnrl_icb_buffer">
-                            <SubModule name="u_sirv_gnrl_cmd_fifo" Lut="11">
+                            <SubModule name="u_sirv_gnrl_cmd_fifo" Lut="12">
                                 <SubModule name="dp_gt0.rptr_vec_0_dfflrs" Register="1"/>
                                 <SubModule name="dp_gt0.wptr_vec_0_dfflrs" Register="1"/>
                                 <SubModule name="dp_gt0.dp_gt1.rptr_vec_31_dfflr" Register="1"/>
@@ -541,26 +541,26 @@
                                 <SubModule name="dp_gt0.fifo_rf[0].fifo_rf_dffl" Register="65"/>
                                 <SubModule name="dp_gt0.fifo_rf[1].fifo_rf_dffl" Register="65"/>
                             </SubModule>
-                            <SubModule name="u_sirv_gnrl_rsp_fifo" Lut="15">
+                            <SubModule name="u_sirv_gnrl_rsp_fifo" Lut="12">
                                 <SubModule name="dp_gt0.rptr_vec_0_dfflrs" Register="1"/>
                                 <SubModule name="dp_gt0.wptr_vec_0_dfflrs" Register="1"/>
                                 <SubModule name="dp_gt0.dp_gt1.rptr_vec_31_dfflr" Register="1"/>
                                 <SubModule name="dp_gt0.dp_gt1.wptr_vec_31_dfflr" Register="1"/>
                                 <SubModule name="dp_gt0.vec_0_dfflrs" Register="1"/>
                                 <SubModule name="dp_gt0.vec_31_dfflr" Register="2"/>
-                                <SubModule name="dp_gt0.fifo_rf[0].fifo_rf_dffl" Register="132" Lut="166" Bsram="2"/>
+                                <SubModule name="dp_gt0.fifo_rf[0].fifo_rf_dffl" Register="132" Lut="172" Bsram="2"/>
                                 <SubModule name="dp_gt0.fifo_rf[1].fifo_rf_dffl" Register="1" Lut="64"/>
                             </SubModule>
                         </SubModule>
                         <SubModule name="u_i_icb_splt" Lut="73">
-                            <SubModule name="splt_num_gt_1_gen.fifo_dp_1.u_sirv_gnrl_rspid_fifo" Lut="2">
+                            <SubModule name="splt_num_gt_1_gen.fifo_dp_1.u_sirv_gnrl_rspid_fifo" Lut="3">
                                 <SubModule name="dp_gt_0.vld_dfflr" Register="1"/>
                                 <SubModule name="dp_gt_0.dat_dfflr" Register="5"/>
                             </SubModule>
                         </SubModule>
                     </SubModule>
                     <SubModule name="u_expl_axi_icb2axi">
-                        <SubModule name="u_sirv_gnrl_rw_fifo" Lut="19">
+                        <SubModule name="u_sirv_gnrl_rw_fifo" Lut="21">
                             <SubModule name="dp_gt0.rptr_vec_0_dfflrs" Register="1"/>
                             <SubModule name="dp_gt0.wptr_vec_0_dfflrs" Register="1"/>
                             <SubModule name="dp_gt0.dp_gt1.rptr_vec_31_dfflr" Register="3"/>
@@ -597,7 +597,7 @@
                     </SubModule>
                 </SubModule>
             </SubModule>
-            <SubModule name="u_sirv_debug_module" Lut="125">
+            <SubModule name="u_sirv_debug_module" Lut="124">
                 <SubModule name="u_dm_ResetCatchAndSync_2_1">
                     <SubModule name="reset_n_catch_reg">
                         <SubModule name="reg_0" Register="1"/>
@@ -627,7 +627,7 @@
                     <SubModule name="step_dfflr" Register="1"/>
                     <SubModule name="ebreakm_dfflr" Register="1"/>
                 </SubModule>
-                <SubModule name="jtag_dtm_gen.u_sirv_jtag_dtm" Register="97" Lut="108">
+                <SubModule name="jtag_dtm_gen.u_sirv_jtag_dtm" Register="97" Lut="106">
                     <SubModule name="u_jtag2debug_cdc_tx" Lut="4">
                         <SubModule name="u_o_rdy_sync">
                             <SubModule name="sync_gen[0].i_is_0.sync_dffr" Register="1"/>
@@ -638,7 +638,7 @@
                         <SubModule name="o_rdy_sync_dffr" Register="1"/>
                         <SubModule name="buf_nrdy_dfflr" Register="1"/>
                     </SubModule>
-                    <SubModule name="u_jtag2debug_cdc_rx" Lut="5">
+                    <SubModule name="u_jtag2debug_cdc_rx" Lut="6">
                         <SubModule name="u_i_vld_sync">
                             <SubModule name="sync_gen[0].i_is_0.sync_dffr" Register="1"/>
                             <SubModule name="sync_gen[1].i_is_not_0.sync_dffr" Register="1"/>
@@ -649,7 +649,7 @@
                         <SubModule name="buf_vld_dfflr" Register="1"/>
                     </SubModule>
                 </SubModule>
-                <SubModule name="u_dm2dtm_cdc_tx" Lut="7">
+                <SubModule name="u_dm2dtm_cdc_tx" Lut="6">
                     <SubModule name="u_o_rdy_sync">
                         <SubModule name="sync_gen[0].i_is_0.sync_dffr" Register="1"/>
                         <SubModule name="sync_gen[1].i_is_not_0.sync_dffr" Register="1"/>
@@ -706,7 +706,7 @@
                     <SubModule name="buf_vld_dfflr" Register="1"/>
                 </SubModule>
                 <SubModule name="u_aon_1to2_icb" Lut="3">
-                    <SubModule name="u_i_icb_splt" Lut="929">
+                    <SubModule name="u_i_icb_splt" Lut="924">
                         <SubModule name="splt_num_gt_1_gen.fifo_dp_1.u_sirv_gnrl_rspid_fifo" Lut="3">
                             <SubModule name="dp_gt_0.vld_dfflr" Register="1"/>
                             <SubModule name="dp_gt_0.dat_dfflr" Register="2" Lut="1"/>
@@ -717,20 +717,20 @@
                     <SubModule name="lfxoscen_dfflrs" Register="1"/>
                 </SubModule>
                 <SubModule name="u_sirv_aon_wrapper" Lut="3">
-                    <SubModule name="u_sirv_aon" Register="512" Lut="45">
-                        <SubModule name="rtc" Register="85" Lut="199">
+                    <SubModule name="u_sirv_aon" Register="512" Lut="43">
+                        <SubModule name="rtc" Register="85" Lut="204">
                             <SubModule name="AsyncResetRegVec_1">
                                 <SubModule name="reg_0" Register="1"/>
                             </SubModule>
                         </SubModule>
                         <SubModule name="u_sirv_pmu" Register="8" Lut="3">
-                            <SubModule name="u_pmu_core" Register="171" Lut="145"/>
+                            <SubModule name="u_pmu_core" Register="171" Lut="144"/>
                             <SubModule name="AsyncResetRegVec_1_1">
                                 <SubModule name="reg_3" Register="1" Lut="1"/>
                                 <SubModule name="reg_4" Register="1" Lut="1"/>
                             </SubModule>
                         </SubModule>
-                        <SubModule name="wdog" Register="55" Lut="194">
+                        <SubModule name="wdog" Register="55" Lut="197">
                             <SubModule name="AsyncResetRegVec_2_1">
                                 <SubModule name="reg_0" Register="1"/>
                             </SubModule>
