@@ -1,0 +1,16 @@
+-d D:\document\GitHub\E203_tangMega138K\E203_138k\impl\gwsynthesis\E203_138k.vg
+-p GW5AST-138B-FCPBGA676A-1
+-pn GW5AST-LV138FPG676AES
+-cst D:\document\GitHub\E203_tangMega138K\E203_138k\src\E203_138k.cst
+-cfg D:\document\GitHub\E203_tangMega138K\E203_138k\impl\pnr\device.cfg
+-sdc D:\document\GitHub\E203_tangMega138K\E203_138k\src\E203_138k.sdc
+-bit
+-tr
+-ph
+-timing
+-ireg_not_in_iob
+-oreg_not_in_iob
+-ioreg_not_in_iob
+-cst_error
+-correct_hold 1
+-route_maxfan 23
