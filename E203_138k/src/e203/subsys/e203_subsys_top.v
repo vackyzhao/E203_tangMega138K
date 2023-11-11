@@ -29,6 +29,7 @@
 `include "../core/e203_defines.v"
 
 module e203_subsys_top(
+  output [31:0]inspect_pc,
   // This clock should comes from the crystal pad generated high speed clock (16MHz)
   input  hfextclk,
   output hfxoscen,// The signal to enable the crystal pad generated clock
@@ -312,6 +313,7 @@ module e203_subsys_top(
 
 
   e203_subsys_main  u_e203_subsys_main(
+    .inspect_pc(inspect_pc),
     .pc_rtvec        (pc_rtvec),
 
     .inspect_mode    (inspect_mode    ), 

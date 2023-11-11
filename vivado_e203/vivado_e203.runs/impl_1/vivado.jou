@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Nov  9 23:23:35 2023
+# Process ID: 43440
+# Current directory: D:/document/GitHub/E203_tangMega138K/vivado_e203/vivado_e203.runs/impl_1
+# Command line: vivado.exe -log system.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system.tcl -notrace
+# Log file: D:/document/GitHub/E203_tangMega138K/vivado_e203/vivado_e203.runs/impl_1/system.vdi
+# Journal file: D:/document/GitHub/E203_tangMega138K/vivado_e203/vivado_e203.runs/impl_1\vivado.jou
+# Running On: Chuqi-MSI, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 25574 MB
+#-----------------------------------------------------------
+source system.tcl -notrace

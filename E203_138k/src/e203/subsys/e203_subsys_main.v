@@ -30,6 +30,7 @@
 
 
 module e203_subsys_main(
+  output [31:0] inspect_pc,
   output core_csr_clk,
 
   output hfxoscen,// The signal to enable the crystal pad generated clock

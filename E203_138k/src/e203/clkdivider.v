@@ -1,29 +1,21 @@
 // Divide clock by 256, used to generate 32.768 kHz clock for AON block
-module clkdivider
-(
-  input wire clk,
-  input wire reset_n,
-  output reg clk_out
+module clkdivider (
+    input  wire clk_in,
+    output reg  clk_out
 );
 
-  reg [7:0] counter;
+  reg [9:0] counter;
+  initial begin
+    counter = 10'd0;
+    clk_out = 1;
+  end
 
-  always @(posedge clk)
-  begin
-    if (~reset_n)
-    begin
-      counter <= 8'd0;
-      clk_out <= 1'b0;
-    end
-
-    else if (counter == 8'd243)
-    begin
-      counter <= 8'd0;
+  always @(posedge clk_in) begin
+     if (counter == 10'd243) begin
+      counter <= 10'd0;
       clk_out <= ~clk_out;
-    end
-    else
-    begin
-      counter <= counter+1;
+    end else begin
+      counter <= counter + 1'd1;
     end
   end
 endmodule

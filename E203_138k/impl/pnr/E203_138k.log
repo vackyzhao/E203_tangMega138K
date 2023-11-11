@@ -12,7 +12,7 @@ Running routing......
 [60%] Routing Phase 0 completed
 [70%] Routing Phase 1 completed
 [80%] Routing Phase 2 completed
-WARN  (PR1014) : Generic routing resource will be used to clock signal 'iobuf_jtag_TCK_o_Z' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'mcu_TCK_d' by the specified constraint. And then it may lead to the excessive delay or skew
 WARN  (PR1014) : Generic routing resource will be used to clock signal 'CLK50MHZ_d' by the specified constraint. And then it may lead to the excessive delay or skew
 [90%] Routing Phase 3 completed
 Running timing analysis......
@@ -24,5 +24,5 @@ Generate file "D:\document\GitHub\E203_tangMega138K\E203_138k\impl\pnr\E203_138k
 Generate file "D:\document\GitHub\E203_tangMega138K\E203_138k\impl\pnr\E203_138k.rpt.html" completed
 Generate file "D:\document\GitHub\E203_tangMega138K\E203_138k\impl\pnr\E203_138k.rpt.txt" completed
 Generate file "D:\document\GitHub\E203_tangMega138K\E203_138k\impl\pnr\E203_138k.tr.html" completed
-Sun Oct 15 16:13:09 2023
+Sun Nov 12 00:07:14 2023
 

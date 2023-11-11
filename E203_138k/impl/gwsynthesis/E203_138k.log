@@ -1,5 +1,7 @@
 GowinSynthesis start
 Running parser ...
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\IO_BUFF.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\clkdivider.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\core\config.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\core\e203_biu.v'
 Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\core\..\core\e203_defines.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\core\e203_biu.v":27)
@@ -217,9 +219,9 @@ Back to file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\debug\sirv
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\debug\sirv_debug_ram.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\debug\sirv_debug_rom.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\debug\sirv_jtag_dtm.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\fab\sirv_icb1to16_bus.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\fab\sirv_icb1to2_bus.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\fab\sirv_icb1to8_bus.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\fab\sirv_icb1to16_bus.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\general\sirv_1cyc_sram_ctrl.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\general\sirv_gnrl_bufs.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\general\sirv_gnrl_dffs.v'
@@ -230,18 +232,6 @@ Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\general\sirv_sram_icb_ctrl.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\mems\sirv_mrom.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\mems\sirv_mrom_top.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon_lclkgen_regs.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon_porrst.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon_top.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon_wrapper.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_AsyncResetReg.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_AsyncResetRegVec.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_AsyncResetRegVec_1.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_AsyncResetRegVec_36.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_AsyncResetRegVec_129.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_clint.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_clint_top.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_adv_timer\adv_timer_apb_if.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_adv_timer\apb_adv_timer.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_adv_timer\comparator.v'
@@ -250,39 +240,17 @@ Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_adv_timer\timer_cntrl.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_adv_timer\timer_module.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_adv_timer\up_down_counter.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_DeglitchShiftRegister.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_expl_axi_slv.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_flash_qspi.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_flash_qspi_top.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_hclkgen_regs.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_jtaggpioport.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_LevelGateway.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_plic_man.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_plic_top.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_pmu.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_pmu_core.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_qspi_arbiter.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_qspi_fifo.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_gpio\apb_gpio.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_qspi_media.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_qspi_physical.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_queue.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_queue_1.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_repeater_6.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_ResetCatchAndSync.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_ResetCatchAndSync_2.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_rtc.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_spi_flashmap.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_tl_repeater_5.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_tlfragmenter_qspi_1.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_tlwidthwidget_qspi.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_wdog.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\apb_i2c.v'
 Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_defines.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\apb_i2c.v":13)
 Back to file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\apb_i2c.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\apb_i2c.v":13)
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_bit_ctrl.v'
 Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_defines.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_bit_ctrl.v":137)
 Back to file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_bit_ctrl.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_bit_ctrl.v":137)
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_byte_ctrl.v'
+Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_defines.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_byte_ctrl.v":69)
+Back to file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_byte_ctrl.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_byte_ctrl.v":69)
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_defines.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_spi_master\apb_spi_master.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_spi_master\spi_master_apb_if.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_spi_master\spi_master_clkgen.v'
@@ -290,10 +258,6 @@ Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_spi_master\spi_master_fifo.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_spi_master\spi_master_rx.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_spi_master\spi_master_tx.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_byte_ctrl.v'
-Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_defines.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_byte_ctrl.v":69)
-Back to file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_byte_ctrl.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_byte_ctrl.v":69)
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_i2c\i2c_master_defines.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_uart\apb_uart.v'
 WARN  (EX3801) : Parameter 'RBR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_uart\apb_uart.v":35)
 WARN  (EX3801) : Parameter 'THR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_uart\apb_uart.v":35)
@@ -313,6 +277,44 @@ Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_uart\uart_interrupt.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_uart\uart_rx.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\apb_uart\uart_tx.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_AsyncResetReg.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_AsyncResetRegVec.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_AsyncResetRegVec_1.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_AsyncResetRegVec_129.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_AsyncResetRegVec_36.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_DeglitchShiftRegister.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_LevelGateway.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_ResetCatchAndSync.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_ResetCatchAndSync_2.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon_lclkgen_regs.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon_porrst.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon_top.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon_wrapper.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_clint.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_clint_top.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_expl_axi_slv.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_flash_qspi.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_flash_qspi_top.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_hclkgen_regs.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_jtaggpioport.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_plic_man.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_plic_top.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_pmu.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_pmu_core.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_qspi_arbiter.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_qspi_fifo.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_qspi_media.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_qspi_physical.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_queue.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_queue_1.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_repeater_6.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_rtc.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_spi_flashmap.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_tl_repeater_5.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_tlfragmenter_qspi_1.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_tlwidthwidget_qspi.v'
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_wdog.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\soc\e203_soc_top.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\e203_subsys_clint.v'
 Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\e203_defines.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\e203_subsys_clint.v":28)
@@ -339,6 +341,7 @@ Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203
 Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\config.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\e203_defines.v":27)
 Back to file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\e203_defines.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\e203_defines.v":27)
 Back to file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\e203_subsys_main.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\e203_subsys_main.v":29)
+WARN  (EX3628) : Redeclaration of ANSI port 'inspect_pc' is not allowed("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\e203_subsys_main.v":244)
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\e203_subsys_mems.v'
 Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\e203_defines.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\e203_subsys_mems.v":29)
 Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\config.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\e203_defines.v":27)
@@ -374,15 +377,11 @@ Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203
 Analyzing included file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\config.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\e203_defines.v":27)
 Back to file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\e203_defines.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\..\core\e203_defines.v":27)
 Back to file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\e203_subsys_top.v'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\e203_subsys_top.v":29)
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\clkdivider.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\IO_BUFF.v'
-Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\gowin_pll\gowin_pll.v'
 Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v'
-Undeclared symbol 'CLK32768KHZ', assumed default net type 'wire'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":65)
+Analyzing Verilog file 'D:\document\GitHub\E203_tangMega138K\E203_138k\src\gowin_pll\gowin_pll.v'
 Compiling module 'system'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":3)
-Compiling module 'clkdivider'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\clkdivider.v":2)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\clkdivider.v":26)
 Compiling module 'Gowin_PLL'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\gowin_pll\gowin_pll.v":10)
+Compiling module 'clkdivider'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\clkdivider.v":2)
 Compiling module 'IOBUF'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\IO_BUFF.v":1)
 Compiling module 'e203_soc_top'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\soc\e203_soc_top.v":19)
 Compiling module 'e203_subsys_top'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\subsys\e203_subsys_top.v":31)
@@ -735,11 +734,11 @@ Compiling module 'sirv_wdog'("D:\document\GitHub\E203_tangMega138K\E203_138k\src
 Compiling module 'sirv_queue'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_queue.v":20)
 Compiling module 'sirv_DeglitchShiftRegister'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_DeglitchShiftRegister.v":19)
 Compiling module 'sirv_aon_porrst'("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\perips\sirv_aon_porrst.v":28)
-WARN  (EX2565) : Input 'io_pads_qspi0_dq_0_i_ival' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":211)
-WARN  (EX2565) : Input 'io_pads_qspi0_dq_1_i_ival' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":211)
-WARN  (EX2565) : Input 'io_pads_qspi0_dq_2_i_ival' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":211)
-WARN  (EX2565) : Input 'io_pads_qspi0_dq_3_i_ival' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":211)
-WARN  (EX2565) : Input 'io_pads_aon_pmu_dwakeup_n_i_ival' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":211)
+WARN  (EX2565) : Input 'io_pads_qspi0_dq_0_i_ival' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":191)
+WARN  (EX2565) : Input 'io_pads_qspi0_dq_1_i_ival' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":191)
+WARN  (EX2565) : Input 'io_pads_qspi0_dq_2_i_ival' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":191)
+WARN  (EX2565) : Input 'io_pads_qspi0_dq_3_i_ival' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":191)
+WARN  (EX2565) : Input 'io_pads_aon_pmu_dwakeup_n_i_ival' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":191)
 NOTE  (EX0101) : Current top module is "system"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
@@ -757,9 +756,6 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "IOBUF" instantiated to "IOBUF_jtag_TCK" is swept in optimizing("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":102)
-WARN  (NL0002) : The module "IOBUF" instantiated to "IOBUF_jtag_TDI" is swept in optimizing("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":124)
-WARN  (NL0002) : The module "IOBUF" instantiated to "IOBUF_jtag_TMS" is swept in optimizing("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\system.v":113)
 WARN  (NL0002) : The module "sirv_gnrl_dfflrs" instantiated to "dp_gt0.rptr_vec_0_dfflrs" is swept in optimizing("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\general\sirv_gnrl_bufs.v":451)
 WARN  (NL0002) : The module "sirv_gnrl_dfflrs" instantiated to "dp_gt0.wptr_vec_0_dfflrs" is swept in optimizing("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\general\sirv_gnrl_bufs.v":452)
 WARN  (NL0002) : The module "sirv_gnrl_dfflrs" instantiated to "dp_gt0.rptr_vec_0_dfflrs" is swept in optimizing("D:\document\GitHub\E203_tangMega138K\E203_138k\src\e203\general\sirv_gnrl_bufs.v":451)

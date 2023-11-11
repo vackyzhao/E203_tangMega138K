@@ -2,6 +2,14 @@
  "Device" : "GW5AST-138B",
  "Files" : [
   {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/IO_BUFF.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/clkdivider.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/core/config.v",
    "Type" : "verilog"
   },
@@ -190,15 +198,15 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/fab/sirv_icb1to16_bus.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/fab/sirv_icb1to2_bus.v",
    "Type" : "verilog"
   },
   {
    "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/fab/sirv_icb1to8_bus.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/fab/sirv_icb1to16_bus.v",
    "Type" : "verilog"
   },
   {
@@ -242,54 +250,6 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_aon.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_aon_lclkgen_regs.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_aon_porrst.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_aon_top.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_aon_wrapper.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_AsyncResetReg.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_AsyncResetRegVec.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_AsyncResetRegVec_1.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_AsyncResetRegVec_36.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_AsyncResetRegVec_129.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_clint.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_clint_top.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/apb_adv_timer/adv_timer_apb_if.v",
    "Type" : "verilog"
   },
@@ -322,111 +282,7 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_DeglitchShiftRegister.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_expl_axi_slv.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_flash_qspi.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_flash_qspi_top.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_hclkgen_regs.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_jtaggpioport.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_LevelGateway.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_plic_man.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_plic_top.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_pmu.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_pmu_core.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_qspi_arbiter.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_qspi_fifo.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/apb_gpio/apb_gpio.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_qspi_media.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_qspi_physical.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_queue.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_queue_1.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_repeater_6.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_ResetCatchAndSync.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_ResetCatchAndSync_2.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_rtc.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_spi_flashmap.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_tl_repeater_5.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_tlfragmenter_qspi_1.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_tlwidthwidget_qspi.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_wdog.v",
    "Type" : "verilog"
   },
   {
@@ -435,6 +291,14 @@
   },
   {
    "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/apb_i2c/i2c_master_bit_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/apb_i2c/i2c_master_byte_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/apb_i2c/i2c_master_defines.v",
    "Type" : "verilog"
   },
   {
@@ -466,14 +330,6 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/apb_i2c/i2c_master_byte_ctrl.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/apb_i2c/i2c_master_defines.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/apb_uart/apb_uart.v",
    "Type" : "verilog"
   },
@@ -491,6 +347,158 @@
   },
   {
    "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/apb_uart/uart_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_AsyncResetReg.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_AsyncResetRegVec.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_AsyncResetRegVec_1.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_AsyncResetRegVec_129.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_AsyncResetRegVec_36.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_DeglitchShiftRegister.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_LevelGateway.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_ResetCatchAndSync.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_ResetCatchAndSync_2.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_aon.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_aon_lclkgen_regs.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_aon_porrst.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_aon_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_aon_wrapper.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_clint.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_clint_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_expl_axi_slv.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_flash_qspi.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_flash_qspi_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_hclkgen_regs.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_jtaggpioport.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_plic_man.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_plic_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_pmu.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_pmu_core.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_qspi_arbiter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_qspi_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_qspi_media.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_qspi_physical.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_queue.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_queue_1.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_repeater_6.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_rtc.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_spi_flashmap.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_tl_repeater_5.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_tlfragmenter_qspi_1.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_tlwidthwidget_qspi.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/perips/sirv_wdog.v",
    "Type" : "verilog"
   },
   {
@@ -546,19 +554,11 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/clkdivider.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/IO_BUFF.v",
+   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/system.v",
    "Type" : "verilog"
   },
   {
    "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/gowin_pll/gowin_pll.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/document/GitHub/E203_tangMega138K/E203_138k/src/e203/system.v",
    "Type" : "verilog"
   }
  ],

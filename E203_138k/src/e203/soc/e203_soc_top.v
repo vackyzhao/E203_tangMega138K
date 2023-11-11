@@ -17,6 +17,7 @@
                                                                          
                                                                          
 module e203_soc_top(
+  output [31:0] inspect_pc,
 
     // This clock should comes from the crystal pad generated high speed clock (16MHz)
   input  hfextclk,
@@ -99,6 +100,7 @@ module e203_soc_top(
  wire sysmem_icb_cmd_ready;
 
  e203_subsys_top u_e203_subsys_top(
+  .inspect_pc(inspect_pc),
     .core_mhartid      (1'b0),
   
 
