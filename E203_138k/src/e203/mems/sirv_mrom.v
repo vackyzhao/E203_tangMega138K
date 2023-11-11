@@ -65,11 +65,11 @@ module sirv_mrom # (
        // CYC: 8621 PC:00001014 IR:00028067 DASM: jr      t0                
 
        // The 20400000 is the flash address
-         //MEMORY
-         //{
-         //  flash (rxai!w) : ORIGIN = 0x20400000, LENGTH = 512M
-         //  ram (wxa!ri) : ORIGIN = 0x80000000, LENGTH = 16K
-         //}
+        //  MEMORY
+        //  {
+        //   flash (rxai!w) : ORIGIN = 0x20400000, LENGTH = 512M
+        //   ram (wxa!ri) : ORIGIN = 0x80000000, LENGTH = 16K
+        //  }
 
 
     for (i=0;i<1024;i=i+1) begin: rom_gen
@@ -87,7 +87,7 @@ module sirv_mrom # (
         end
         else if(i==4) begin: rom1_gen
             //assign mask_rom[i] = 32'h204002b7;
-            assign mask_rom[i] = 32'h20400000 | 32'h000002b7;
+            assign mask_rom[i] = 32'h80000000 | 32'h000002b7;
         end
         else if(i==5) begin: rom1_gen
             assign mask_rom[i] = 32'h28067;
